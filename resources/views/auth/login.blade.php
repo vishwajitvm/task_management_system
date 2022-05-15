@@ -43,6 +43,7 @@
                     {{ __('Log in') }}
                 </x-jet-button>
             </div>
+            <a href="{{ Route('auth.google') }}">Login with Google</a>
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
