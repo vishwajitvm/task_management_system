@@ -1,0 +1,86 @@
+Research design: it is an arrangment of condition for collection and analysis of data in a manner that aims to combine relevence to the research purpose with economy procedure.
+                            or
+research design is the set of method or condition & procedure analyzing mesures of the variables specified in the problem research.
+                            or
+Research design is the conceptual structur withing which research is conducted.
+                            or
+Blueprint of collection , mesurment and analysis of data.
+
+==============================================================================================
+==============================================================================================
+
+steps for market reserach:
+        a. formulating the problem
+        b. for what we are doing research for
+        c. why we need data ?
+        d. diffrent method to use to gether the data from market and all.
+        e. now you have data
+        f. analysis
+        g. problem solve
+        HUrrreyyyy
+
+==============================================================================================
+==============================================================================================
+
+
+TYPES OF Research DESIGN 
+        a. Exploratory
+        b. descrptive
+        c. conceptual or experimental
+
+==============================================================================================
+==============================================================================================
+
+1). Exploratory Research DESIGN : 
+    main purpose of such study is that to formulating the problem for precise investigation of of developmenting the working hypothesis from and oprational point of view
+    => major stresss of such study is on the discovery of idea & insight.
+    =>such study is flexiblity enough to provide opportunity for considering diffrent aspects of the problom under studies.
+
+----------------------------------------------------------------------------------------------------
+
+2). descrptive research design: 
+    it concerned with describing characteristics of the particular individual or a group.
+    =>describe the nature of demographic segment , without focusin on {{ "WHY" <-it happend and what cause }}
+@taste
+@prefrences
+@behaviour
+@arrangment@gender 
+@income
+@education
+@geographic location
+
+----------------------------------------------------------------------------------------------------
+
+3). casual research or experimental research:
+    it use to establish a relation between the cause and effect of situaation
+    ->it based of "WHY" and "WHAT" factores
+
+
+
+
+                                Daily   Consumption (KWh)	Monthly Consumption (KWh)
+                                Before	After	Before	After
+                                Cpd	06	3,570	2,677	78,540	58,905
+                                Taxation	09	5,355	4,016	117,810	88,353
+                                Planning	04	2,38	1,785	52,360	39,270
+                                Protocol	01	0,595	0,466	13,090	9,817
+                                Treasury	05	2,975	2,231	65,450	49,087
+                                Accounting	06	3,570	2,677	78,540	58,905
+                                Heritage	02	1,19	0,932	26,180	19,635
+                                Shopping	05	2,975	2,231	65,450	49,087
+                                Warehouse	04	2,38	1,785	52,360	39,270
+                                Hr	05	2,975	2,231	65,450	49,087
+                                General Total	47	27,965	20,973	615,230	451,422
+
+                                
+                            
+
+
+
+
+
+
+
+
+
+

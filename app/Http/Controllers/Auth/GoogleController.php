@@ -8,6 +8,7 @@ use Laravel\Socialite\Facades\Socialite ;
 use Illuminate\Support\Facades\Auth ;
 use Exception ;
 use App\Models\User ;
+use Illuminate\Support\Facades\Hash ;
 
 class GoogleController extends Controller
 {
@@ -30,7 +31,7 @@ class GoogleController extends Controller
                     'name' => $user->name ,
                     'email' => $user->email ,
                     'google_id' => $user->id,
-                    'password'=>encrypt('123456789')
+                    'password'=>Hash::make('123456789')
                 ]) ;
                 Auth::login($newUser) ;
                 return redirect()->intended('dashboard') ; //redirected
