@@ -1,49 +1,94 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+    <!-- START: Head-->
+    
+<!-- Mirrored from html.designstream.co.in/pick/html/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 18:56:06 GMT -->
+<head>
+        <meta charset="UTF-8">
+        <title>Pick Admin</title>
+        <link rel="shortcut icon" href="{{asset('backend/dist/images/favicon.ico')}}" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
 
-        <x-jet-validation-errors class="mb-4" />
+        <!-- START: Template CSS-->
+        <link rel="stylesheet" href="{{asset('backend/dist/vendors/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('backend/dist/vendors/jquery-ui/jquery-ui.min.css')}}">
+        <link rel="stylesheet" href="{{asset('backend/dist/vendors/jquery-ui/jquery-ui.theme.min.css')}}">
+        <link rel="stylesheet" href="{{asset('backend/dist/vendors/simple-line-icons/css/simple-line-icons.css')}}">        
+        <link rel="stylesheet" href="{{asset('backend/dist/vendors/flags-icon/css/flag-icon.min.css')}}"> 
 
-        @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
+        <!-- END Template CSS-->     
+
+        <!-- START: Page CSS-->   
+        <link rel="stylesheet" href="{{asset('backend/dist/vendors/social-button/bootstrap-social.css')}}"/>   
+        <!-- END: Page CSS-->
+
+        <!-- START: Custom CSS-->
+        <link rel="stylesheet" href="{{asset('backend/dist/css/main.css')}}">
+        <!-- END: Custom CSS-->
+    </head>
+    <!-- END Head-->
+
+    <!-- START: Body-->
+    <body id="main-container" class="default">
+        <!-- START: Main Content-->
+        <div class="container">
+            <div class="row vh-100 justify-content-between align-items-center">
+                <div class="col-12">
+                    <form action="#" class="row row-eq-height lockscreen  mt-5 mb-5">
+                        <div class="lock-image col-12 col-sm-5"></div>
+                        <div class="login-form col-12 col-sm-7">
+                            <div class="form-group mb-3">
+                                <label for="emailaddress">Email address</label>
+                                <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="password">Password</label>
+                                <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked="">
+                                    <label class="custom-control-label" for="checkbox-signin">Remember me</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-0">
+                                <button class="btn btn-primary" type="submit"> Log In </button>
+                            </div>
+                            <p class="my-2 text-muted">--- Or connect with ---</p>
+                            <a class="btn btn-social btn-dropbox text-white mb-2">
+                                <i class="icon-social-dropbox align-middle"></i>
+                            </a>
+                            <a class="btn btn-social btn-facebook text-white mb-2">
+                                <i class="icon-social-facebook align-middle"></i>
+                            </a>                                   
+                            <a class="btn btn-social btn-github text-white mb-2">
+                                <i class="icon-social-github align-middle"></i>
+                            </a>
+                            <a class="btn btn-social btn-google text-white mb-2">
+                                <i class="icon-social-google align-middle"></i>
+                            </a>
+                            <div class="mt-2">Don't have an account? <a href="page-register.html">Create an Account</a></div>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-        @endif
+        </div>
+        <!-- END: Content-->
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+        <!-- START: Template JS-->
+        <script src="{{asset('backend/dist/vendors/jquery/jquery-3.3.1.min.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/jquery-ui/jquery-ui.min.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/moment/moment.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>    
+        <script src="{{asset('backend/dist/vendors/slimscroll/jquery.slimscroll.min.js')}}"></script>
 
-            <div>
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
+        <!-- END: Template JS-->  
+    </body>
+    <!-- END: Body-->
 
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-            </div>
-
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-jet-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-jet-button>
-            </div>
-            <a href="{{ Route('auth.google') }}">Login with Google</a>
-        </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+<!-- Mirrored from html.designstream.co.in/pick/html/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 18:56:06 GMT -->
+</html>
