@@ -83,7 +83,7 @@
                             <a href="{{ Route('auth.google') }}" class="btn btn-social btn-google text-white mb-2 btn-block">
                                 <i class="icon-social-google align-middle"></i>
                             </a>
-                            <div class="mt-2">Don't have an account? <a href="page-register.html">Create an Account</a></div>
+                            <div class="mt-2">Don't have an account? <b>  <a href="{{ Route('register') }}">Create an Account</a> </b> </div>
 
                            
 
