@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Auth ;
 use App\Http\Controllers\Auth\GoogleController ;
 //Auth Check
 use App\Http\Controllers\auth\AuthCheckController ;
+//ADMIN CONTROLLERS
+use App\Http\Controllers\admin\AdminController ;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,12 +35,6 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
-    Route::get('/dashboard', function () {
-        // return view('dashboard');
-        return view('admin_dashboard.index');
-    })->name('dashboard')->middleware('authcheck');
-});
 /*
 |--------------------------------------------------------------------------
 | GOOGLE AUTHENTICATIONS ROUTE ABOVE
@@ -61,6 +57,20 @@ Route::get('auth/google/callback' , [GoogleController::class , 'HandleGoogleCall
 ////////////////ADMIN DASHBOARD ROUTING//////////////////////////
 //********************************************************* *//
 //************************************************************ *//
+//admin dashboard
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        // return view('dashboard');
+        return view('admin_dashboard.index');
+    })->name('dashboard')->middleware('authcheck');
+});
+
+//Admin Logout and profile managements 
+Route::prefix('admin')->group( function() {
+    //logout
+    Route::get('/logout' , [AdminController::class , 'AdminLogOut'])->name('admin.logout') ;
+
+}) ;
 
 
 

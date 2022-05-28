@@ -136,7 +136,7 @@
                             <div class="dropdown-divider"></div>
                             
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item px-2 text-danger align-self-center d-flex">
+                            <a href="{{ Route('admin.logout') }}" class="dropdown-item px-2 text-danger align-self-center d-flex">
                                 <span class="icon-logout mr-2 h6  mb-0"></span> Sign Out</a>
                         </div>
 
