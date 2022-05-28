@@ -11,7 +11,7 @@
             </li>
 
                 
-                <li class="dropdown"><a href="#"><i class="icon-people mr-1"></i> Employee management</a>                   
+                <li class="dropdown"><a href="#"><i class="icon-people mr-1"></i> Team management</a>                   
                     <ul>
                         <li class="dropdown"><a href="#"><i class="icon-user"></i>Manage Supervisor</a>                               
                             <ul class="sub-menu">
