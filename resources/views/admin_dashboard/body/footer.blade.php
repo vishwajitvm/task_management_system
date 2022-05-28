@@ -1,3 +1,3 @@
 <footer class="site-footer">
-    2020 &copy; PICK
+    <?php echo date("Y");?> &copy; Copyright @<a href="https://github.com/vishwajitvm" target="_blank">Vishwajit vm</a>
 </footer>
