@@ -5870,3 +5870,7 @@ path.domain {
         float: left;
     }
 }
+
+.dataTables_filter {
+    float: right;
+}

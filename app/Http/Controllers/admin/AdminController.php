@@ -13,4 +13,9 @@ class AdminController extends Controller
         Auth::logout() ;
         return redirect()->route('login') ;
     }
+
+    //manages Company data
+    public function CompanyController() {
+        return view('admin_dashboard.pages.company.view') ;
+    }
 }

@@ -109,8 +109,18 @@
         <!-- START: Page JS-->
         <script src="{{asset('backend/dist/js/home.script.js')}}"></script>
         <!-- END: Page JS-->
+
+        <!-- START: Page Vendor JS-->
+        <script src="{{asset('backend/dist/vendors/datatable/js/jquery.dataTables.min.js')}}"></script> 
+        <script src="{{asset('backend/dist/vendors/datatable/js/dataTables.bootstrap4.min.js')}}"></script> 
+        <script src="{{asset('backend/dist/vendors/datatable/editor/mindmup-editabletable.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/datatable/editor/numeric-input-example.js')}}"></script>
+        <!-- END: Page Vendor JS-->
+
+        <!-- START: Page Script JS-->
+        <script src="{{asset('backend/dist/js/datatableedit.script.js')}}"></script>
+        
     </body>
     <!-- END: Body-->
 
-<!-- Mirrored from html.designstream.co.in/pick/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 18:47:39 GMT -->
 </html>

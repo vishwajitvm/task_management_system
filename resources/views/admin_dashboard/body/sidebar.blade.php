@@ -4,7 +4,8 @@
         <ul id="side-menu" class="sidebar-menu">
             <li class="dropdown active"><a href="#"><i class="icon-home mr-1"></i> Dashboard</a>                  
                 <ul>
-                    <li class="active"><a href="index.html"><i class="icon-rocket"></i> Dashboard</a></li>
+                    <li class="active"><a href="{{ Route('dashboard') }}"><i class="icon-rocket"></i> Dashboard</a></li>
+                    <li><a href="{{ Route('admin.company') }}"><i class="icon-home"></i>Manages Company</a></li>
                     <li><a href="user-profile.html"><i class="icon-user"></i>Profile Pages</a></li>
 
                 </ul>

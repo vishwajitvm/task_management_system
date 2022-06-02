@@ -70,6 +70,10 @@ Route::prefix('admin')->group( function() {
     //logout
     Route::get('/logout' , [AdminController::class , 'AdminLogOut'])->name('admin.logout') ;
 
+    //Manages Company Names company
+    Route::get('/company' , [AdminController::class , 'CompanyController'])->name('admin.company') ;
+
+
 }) ;
 
 
