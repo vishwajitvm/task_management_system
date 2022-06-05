@@ -38,13 +38,68 @@
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title" id="myLargeModalLabel10">Modal title</h5>
+                                                            <h5 class="modal-title" id="myLargeModalLabel10">Add company Details</h5>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <p>Modal body text goes here.</p>
+                                                            <!--card body [basic form]-->
+                                                            <div class="row">                                           
+                                                                <div class="col-12">
+                                                                    <form>
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-12">
+                                                                                <label for="inputEmail4">Your Name</label>
+                                                                                <input type="email" class="form-control rounded" id="inputEmail4" placeholder="Email">
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputPassword4">Your email</label>
+                                                                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="inputAddress">Address</label>
+                                                                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="inputAddress2">Address 2</label>
+                                                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                                        </div>
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputCity">City</label>
+                                                                                <input type="text" class="form-control" id="inputCity">
+                                                                            </div>
+                                                                            <div class="form-group col-md-4">
+                                                                                <label for="inputState">State</label>
+                                                                                <select id="inputState" class="form-control">
+                                                                                    <option selected>Choose...</option>
+                                                                                    <option>...</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="form-group col-md-2">
+                                                                                <label for="inputZip">Zip</label>
+                                                                                <input type="text" class="form-control" id="inputZip">
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputDate">Date</label>
+                                                                                <input type="text" class="form-control datepicker" id="inputDate">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked="">
+                                                                                <label class="custom-control-label" for="checkbox-signin">Remember me</label>
+                                                                            </div>
+                                                                        </div>
+                        
+                                                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                        
+                                                            <!--card body end-->
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-primary">Save changes</button>
@@ -71,6 +126,7 @@
                                                 <th>Age</th>
                                                 <th>Start date</th>
                                                 <th>Salary</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -81,6 +137,7 @@
                                                 <td>61</td>
                                                 <td>2011/04/25</td>
                                                 <td>$320,800</td>
+                                                <td><button class="btn btn-warning mb-2" id="delete"><i class="fa fa-trash"></i> Delete</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Michael Bruce</td>

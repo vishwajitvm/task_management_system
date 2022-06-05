@@ -117,8 +117,79 @@
         <script src="{{asset('backend/dist/vendors/datatable/editor/numeric-input-example.js')}}"></script>
         <!-- END: Page Vendor JS-->
 
-        <!-- START: Page Script JS-->
+        <!-- view data editable script-->
         <script src="{{asset('backend/dist/js/datatableedit.script.js')}}"></script>
+
+        <!--form -->
+        <script src="{{asset('backend/dist/vendors/jquery/jquery-3.3.1.min.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/jquery-ui/jquery-ui.min.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/moment/moment.js')}}"></script>
+        <script src="{{asset('backend/dist/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>    
+        <script src="{{asset('backend/dist/vendors/slimscroll/jquery.slimscroll.min.js')}}"></script>
+        <script src="{{asset('backend/dist/js/app.js')}}"></script>
+        <!--form -->
+
+          <!--sweet alert cdn here-->
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+            <script type="text/javascript">
+            $(function() {
+                $(document).on('click' , '#delete' ,function(e) {
+                e.preventDefault() ;
+                var link = $(this).attr("href") ;
+                //sweetalert 
+                    Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                    }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = link
+                        Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                        )
+                    }
+                    })
+                //sweetalert
+                }) ;
+            })
+            </script>
+
+
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+            <script>
+            @if(Session::has('message'))
+            var type = "{{ Session::get('alert-type','info') }}"
+            switch(type){
+                case 'info':
+                toastr.info(" {{ Session::get('message') }} ");
+                break;
+
+                case 'success':
+                toastr.success(" {{ Session::get('message') }} ");
+                break;
+
+
+                case 'warning':
+                toastr.warning(" {{ Session::get('message') }} ");
+                break;
+
+                case 'error':
+                toastr.error(" {{ Session::get('message') }} ");
+                break; 
+            }
+            @endif 
+            </script>
+
+
         
     </body>
     <!-- END: Body-->
